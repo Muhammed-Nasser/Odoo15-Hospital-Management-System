@@ -10,7 +10,11 @@
     'license': 'LGPL-3',
     'depends': ['base',
                 ],
-    'data': [],
+    'data': [
+        # menu should list after all views to read ids of actions
+        'views/patient_view.xml',
+        'views/menu.xml',
+    ],
     'demo': [],
     'application': True,
     'installable': True,

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--Main Menu Root-->
+        <menuitem
+                id="hospital_menu_root"
+                name="Hospital"
+                sequence="0"/>
+
+        <!--Patient Details Menu (Dropdown menu name)-->
+        <menuitem
+                id="patient_details_menu"
+                name="Patients Details"
+                parent="hospital_menu_root"
+                sequence="0"/>
+
+        <!--Patient item in dropdown Patient Details  Menu-->
+        <menuitem
+                id="patient_menu"
+                name="Patient"
+                parent="patient_details_menu"
+                action="om_hospital.hospital_patient_action"
+                sequence="0"/>
+
+    </data>
+</odoo>
