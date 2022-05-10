@@ -4,6 +4,7 @@
         <!--Main Menu Root-->
         <menuitem
                 id="hospital_menu_root"
+                web_icon="om_hospital,static/description/icon.png"
                 name="Hospital"
                 sequence="0"/>
 
