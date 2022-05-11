@@ -22,6 +22,9 @@
             <field name="arch" type="xml">
                 <form string="Patient Detail">
                     <sheet>
+                        <!--  add ribbon Archive -->
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                                attrs="{'invisible': [('active', '=', True)]}"/>
                         <group string="Patient Info">
                             <group>
                                 <field name="name"/>
@@ -29,6 +32,7 @@
                             </group>
                             <group>
                                 <field name="gender"/>
+                                <field name="active" invisible="1"/>
                             </group>
                         </group>
                     </sheet>
@@ -55,6 +59,8 @@
                     <!--separator means and operator-->
                     <separator/>
                     <filter string="Kids" name="filter_kids" domain="[('age', '&lt;', 18)]"/>
+                    <separator/>
+                    <filter string="Archive" name="filter_archive" domain="[('active', '=', False)]"/>
                     <!--group by-->
                     <group expand="0" string="Group By">
                         <filter name="group_by_gender" string="Gender" domain="[]" context="{'group_by':'gender'}"/>
