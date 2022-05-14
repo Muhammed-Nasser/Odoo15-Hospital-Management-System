@@ -18,9 +18,17 @@
         <!--Patient item in dropdown Patient Details  Menu-->
         <menuitem
                 id="patient_menu"
-                name="Patient"
+                name="Patients"
                 parent="patient_details_menu"
                 action="om_hospital.hospital_patient_action"
+                sequence="0"/>
+
+        <!--Female Patient item in dropdown Patient Details  Menu-->
+        <menuitem
+                id="kids_patient_menu"
+                name="Kids Patients"
+                parent="patient_details_menu"
+                action="om_hospital.hospital_kids_patient_action"
                 sequence="0"/>
 
     </data>
