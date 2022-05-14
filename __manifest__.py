@@ -9,6 +9,7 @@
     'website': '',
     'license': 'LGPL-3',
     'depends': ['base',
+                'mail',
                 ],
     'data': [
         # menu should list after all views to read ids of actions
