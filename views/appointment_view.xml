@@ -9,6 +9,8 @@
             <field name="arch" type="xml">
                 <tree string="All Appointment">
                     <field name="patient_id"/>
+                    <field name="appointment_time"/>
+                    <field name="booking_date"/>
                 </tree>
             </field>
         </record>
@@ -23,6 +25,10 @@
                         <group>
                             <group>
                                 <field name="patient_id"/>
+                            </group>
+                            <group>
+                                <field name="appointment_time"/>
+                                <field name="booking_date"/>
                             </group>
                         </group>
                     </sheet>
