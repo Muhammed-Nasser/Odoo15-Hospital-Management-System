@@ -15,6 +15,7 @@
         # menu should list after all views to read ids of actions
         'security/ir.model.access.csv',
         'views/patient_view.xml',
+        'views/appointment_view.xml',
         'views/menu.xml',
     ],
     'demo': [],
