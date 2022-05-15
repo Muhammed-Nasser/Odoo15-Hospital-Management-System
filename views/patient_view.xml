@@ -28,6 +28,7 @@
                         <group string="Patient Info">
                             <group>
                                 <field name="name"/>
+                                <field name="date_of_birth"/>
                                 <field name="age"/>
                             </group>
                             <group>
