@@ -24,4 +24,5 @@ class HospitalPatient(models.Model):
             if rec.date_of_birth:
                 if rec.date_of_birth < date.today():
                     rec.age = date.today().year - rec.date_of_birth.year
-                raise UserError("Sorry, Birth date not valid.")
+                else:
+                    raise UserError("Sorry, Birth date not valid.")
