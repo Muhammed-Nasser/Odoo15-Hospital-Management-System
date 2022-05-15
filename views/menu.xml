@@ -29,14 +29,21 @@
                 name="Kids Patients"
                 parent="patient_details_menu"
                 action="om_hospital.hospital_kids_patient_action"
-                sequence="0"/>
+                sequence="1"/>
+
+        <!--Appointments Menu (Dropdown menu name)-->
+        <menuitem
+                id="appointment_main_menu"
+                name="Appointments"
+                parent="hospital_menu_root"
+                sequence="1"/>
 
         <!--Appointments item in dropdown Patient Details  Menu-->
         <menuitem
                 id="appointment_menu"
                 name="Appointments"
-                parent="patient_details_menu"
+                parent="appointment_main_menu"
                 action="om_hospital.hospital_appointment_action"
-                sequence="1"/>
+                sequence="0"/>
     </data>
 </odoo>
